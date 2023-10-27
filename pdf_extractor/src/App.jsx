@@ -25,7 +25,7 @@ function App() {
       formData.append("pdfFile", selectedFile);
 
       try {
-        const response = await fetch("https://pdfextract.netlify.app/upload", {
+        const response = await fetch("https://pdfweb.onrender.com/upload", {
           method: "POST",
           body: formData,
         });
@@ -54,7 +54,7 @@ function App() {
   const generateNewPDF = async () => {
     try {
       // Send the selected pages to the backend to create a new PDF
-      const response = await fetch("https://pdfextract.netlify.app/extract", {
+      const response = await fetch("https://pdfweb.onrender.com/extract", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
