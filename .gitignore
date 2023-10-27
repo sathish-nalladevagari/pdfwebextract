@@ -1,0 +1,3 @@
+# .gitignore
+/node_modules
+client/pdf_extractor/node_modules
